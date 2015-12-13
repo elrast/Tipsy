@@ -14,6 +14,7 @@
 		B5F4F9251C1C900E00CF08BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F4F9231C1C900E00CF08BC /* LaunchScreen.storyboard */; };
 		B5F4F9301C1C900E00CF08BC /* TipsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4F92F1C1C900E00CF08BC /* TipsyTests.swift */; };
 		B5F4F93B1C1C900E00CF08BC /* TipsyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4F93A1C1C900E00CF08BC /* TipsyUITests.swift */; };
+		B5F4F9491C1CB4F800CF08BC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4F9481C1CB4F800CF08BC /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B5F4F9361C1C900E00CF08BC /* TipsyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F4F93A1C1C900E00CF08BC /* TipsyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyUITests.swift; sourceTree = "<group>"; };
 		B5F4F93C1C1C900E00CF08BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F4F9481C1CB4F800CF08BC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F4F91A1C1C900E00CF08BC /* AppDelegate.swift */,
+				B5F4F9481C1CB4F800CF08BC /* SettingsViewController.swift */,
 				B5F4F91C1C1C900E00CF08BC /* ViewController.swift */,
 				B5F4F91E1C1C900E00CF08BC /* Main.storyboard */,
 				B5F4F9211C1C900E00CF08BC /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 			files = (
 				B5F4F91D1C1C900E00CF08BC /* ViewController.swift in Sources */,
 				B5F4F91B1C1C900E00CF08BC /* AppDelegate.swift in Sources */,
+				B5F4F9491C1CB4F800CF08BC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tipsy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elrast.Tipsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tipsy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elrast.Tipsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
