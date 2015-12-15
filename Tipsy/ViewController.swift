@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Tipsy
 //
-//  Created by Jack Randolph Bryant on 12/12/15.
+//  Created by Ellen Stanfill on 12/12/15.
 //  Copyright © 2015 Ellen Stanfil. All rights reserved.
 //
 
@@ -20,6 +20,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipRatioLabel: UILabel!
     
+    @IBOutlet weak var navBarController: UINavigationItem!
+    
+    var defaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +32,10 @@ class ViewController: UIViewController {
         totalAmtLabel.text = "$0.00"
         
         tipRatioSlider.value = 20
+        
+        if let v = defaults.objectForKey("default_tip")?.floatValue{
+            tipRatioSlider.value = v
+        }
         tipRatioSlider.maximumValue = 60
         tipRatioSlider.minimumValue = 10
         tipRatioSlider.minimumTrackTintColor = UIColor(
@@ -42,6 +50,8 @@ class ViewController: UIViewController {
             blue: 158/255,
             alpha:1.0
         )
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
