@@ -35,6 +35,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 I had difficulty implementing the navigation between the settings and the main view. However, once I realized my mistake it was easy to correct.
+I also do not own a Mac, so I used other people's computers to create my app. This is why there are other contributors listed in this repository.
 
 ## License
 
