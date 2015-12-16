@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A312A911C20CD9300A0E3E2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A312A901C20CD9300A0E3E2 /* SettingsViewController.swift */; };
 		B5F4F91B1C1C900E00CF08BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4F91A1C1C900E00CF08BC /* AppDelegate.swift */; };
 		B5F4F91D1C1C900E00CF08BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4F91C1C1C900E00CF08BC /* ViewController.swift */; };
 		B5F4F9201C1C900E00CF08BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F4F91E1C1C900E00CF08BC /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		B5F4F9251C1C900E00CF08BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F4F9231C1C900E00CF08BC /* LaunchScreen.storyboard */; };
 		B5F4F9301C1C900E00CF08BC /* TipsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4F92F1C1C900E00CF08BC /* TipsyTests.swift */; };
 		B5F4F93B1C1C900E00CF08BC /* TipsyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4F93A1C1C900E00CF08BC /* TipsyUITests.swift */; };
-		B5F4F9491C1CB4F800CF08BC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4F9481C1CB4F800CF08BC /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A312A901C20CD9300A0E3E2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B5F4F9171C1C900E00CF08BC /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F4F91A1C1C900E00CF08BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F4F91C1C1C900E00CF08BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		B5F4F9361C1C900E00CF08BC /* TipsyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F4F93A1C1C900E00CF08BC /* TipsyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyUITests.swift; sourceTree = "<group>"; };
 		B5F4F93C1C1C900E00CF08BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5F4F9481C1CB4F800CF08BC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				B5F4F91A1C1C900E00CF08BC /* AppDelegate.swift */,
-				B5F4F9481C1CB4F800CF08BC /* SettingsViewController.swift */,
 				B5F4F91C1C1C900E00CF08BC /* ViewController.swift */,
+				2A312A901C20CD9300A0E3E2 /* SettingsViewController.swift */,
 				B5F4F91E1C1C900E00CF08BC /* Main.storyboard */,
 				B5F4F9211C1C900E00CF08BC /* Assets.xcassets */,
 				B5F4F9231C1C900E00CF08BC /* LaunchScreen.storyboard */,
@@ -261,7 +261,7 @@
 			files = (
 				B5F4F91D1C1C900E00CF08BC /* ViewController.swift in Sources */,
 				B5F4F91B1C1C900E00CF08BC /* AppDelegate.swift in Sources */,
-				B5F4F9491C1CB4F800CF08BC /* SettingsViewController.swift in Sources */,
+				2A312A911C20CD9300A0E3E2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +488,7 @@
 				B5F4F9411C1C900E00CF08BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5F4F9421C1C900E00CF08BC /* Build configuration list for PBXNativeTarget "TipsyTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +497,7 @@
 				B5F4F9441C1C900E00CF08BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5F4F9451C1C900E00CF08BC /* Build configuration list for PBXNativeTarget "TipsyUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				B5F4F9471C1C900E00CF08BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

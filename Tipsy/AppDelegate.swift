@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Tipsy
 //
-//  Created by Jack Randolph Bryant on 12/12/15.
+//  Created by Ellen Stanfill on 12/12/15.
 //  Copyright © 2015 Ellen Stanfil. All rights reserved.
 //
 

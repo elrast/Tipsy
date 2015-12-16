@@ -31,13 +31,25 @@ class ViewController: UIViewController {
         tipAmtLabel.text = "$0.00"
         totalAmtLabel.text = "$0.00"
         
-        tipRatioSlider.value = 20
+        tipRatioSlider.value = 20.0
+        tipRatioSlider.maximumValue = 60.0
+        tipRatioSlider.minimumValue = 10.0
         
-        if let v = defaults.objectForKey("default_tip")?.floatValue{
-            tipRatioSlider.value = v
+        var defaultTipVal = defaults.doubleForKey("default_tip")
+        if (defaultTipVal != 0.0){
+            tipRatioSlider.value = Float(defaultTipVal)
         }
-        tipRatioSlider.maximumValue = 60
-        tipRatioSlider.minimumValue = 10
+        tipRatioLabel.text = String(format: "%%%.0f", defaultTipVal)
+        
+        var maxTipVal = defaults.doubleForKey("max_tip")
+        if (maxTipVal != 0.0) {
+            tipRatioSlider.maximumValue = Float(maxTipVal)
+        }
+        
+        var minTipVal = defaults.doubleForKey("min_tip")
+        if (minTipVal != 0.0) {
+            tipRatioSlider.minimumValue = Float(minTipVal)
+        }
         tipRatioSlider.minimumTrackTintColor = UIColor(
             red: 81/255,
             green: 140/255,
@@ -50,13 +62,32 @@ class ViewController: UIViewController {
             blue: 158/255,
             alpha:1.0
         )
-        
+        billField?.becomeFirstResponder()
     
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        var defaultTipVal = defaults.doubleForKey("default_tip")
+        if (defaultTipVal != 0.0){
+            tipRatioSlider.value = Float(defaultTipVal)
+        }
+        
+        var maxTipVal = defaults.doubleForKey("max_tip")
+        if (maxTipVal != 0.0) {
+            tipRatioSlider.maximumValue = Float(maxTipVal)
+        }
+        
+        var minTipVal = defaults.doubleForKey("min_tip")
+        if (minTipVal != 0.0) {
+            tipRatioSlider.minimumValue = Float(minTipVal)
+        }
     }
 
 
